@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <span class="cost"> Cost : <p class="number">0</p></span>
+        <button class="button">Update Cost</button>
+        <button class="reset-button">Reset Cost</button>
+    </div>
+    <script>
+        let cost = 0;
+        const button = document.querySelector('.button');
+        const number = document.querySelector('.number');
+        button.addEventListener('click', () => {
+            cost ++;
+            number.textContent = cost;
+        });
+        const resetButton = document.querySelector('.reset-button');
+        resetButton.addEventListener('click', () => {
+            cost = 0;
+            number.textContent = cost;
+        });
+    </script>
+</body>
+</html>

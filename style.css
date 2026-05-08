@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(95, 6, 146);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 200px;
+}
+.cost{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.number{
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+}
+.button, .reset-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.button{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 14px;
+    box-shadow: outset 0 0 0 10px #4CAF50;
+}
+.reset-button{
+    background-color: #f44336;
+    color: white;
+    border-radius: 14px;
+    box-shadow: outset 0 0 0 10px #f44336;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        padding: 15px;
+    }
+    .cost {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .number {
+        font-size: 20px;
+    }
+    .button, .reset-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 4px;
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        max-width: 350px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .cost {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .number {
+        font-size: 18px;
+    }
+    .button, .reset-button {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin: 3px;
+        border-radius: 10px;
+    }
+}
