@@ -1,3 +1,4 @@
+# DEMO-URL: [Click here](https://darksnake288-pixel.github.io/Cost-Number/)
 # Cost Counter Web App
 
 A simple, responsive web application that allows users to track and update a cost counter. Built with HTML, CSS, and JavaScript.
