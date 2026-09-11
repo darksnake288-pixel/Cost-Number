@@ -1,37 +1,38 @@
-# DEMO-URL: [Click here](https://darksnake288-pixel.github.io/Cost-Number/)
-# Cost Counter Web App
+# Cost Number
 
-A simple, responsive web application that allows users to track and update a cost counter. Built with HTML, CSS, and JavaScript.
+Small interactive UI: a cost counter that increases on click and resets to zero. Built with HTML, CSS, and vanilla JavaScript.
+
+**Live demo:** [cost-number.vercel.app](https://cost-number.vercel.app) · [GitHub Pages](https://darksnake288-pixel.github.io/Cost-Number/)
 
 ## Features
 
-- **Cost Display**: Shows the current cost value starting from 0.
-- **Update Button**: Increments the cost by 1 each time it's clicked.
-- **Reset Button**: Resets the cost back to 0.
-- **Responsive Design**: Uses media queries to ensure the app works well on all devices, including desktops, tablets, and mobile phones.
+- **Update Cost** increments the displayed number
+- **Reset Cost** returns the value to `0`
+- Centered card-style layout
 
-## Technologies Used
+## Stack
 
-- **HTML**: Structure of the web page.
-- **CSS**: Styling and responsive design with media queries.
-- **JavaScript**: Handles the counter logic and user interactions.
+- HTML5
+- CSS3
+- JavaScript (inline, no framework)
 
-## How to Use
+## Run locally
 
-1. Open `index.html` in your web browser.
-2. Click the "Update Cost" button to increase the cost by 1.
-3. Click the "Reset Cost" button to set the cost back to 0.
-4. The app is responsive, so it will adapt to different screen sizes automatically.
+```bash
+git clone https://github.com/darksnake288-pixel/Cost-Number.git
+cd Cost-Number
+python3 -m http.server 8080
+```
 
-## File Structure
+Open `http://localhost:8080`, or open `index.html` in a browser.
 
-- `index.html`: The main HTML file containing the structure and JavaScript logic.
-- `style.css`: The CSS file with styles and media queries for responsiveness.
+## Files
 
-## Getting Started
+| File | Role |
+| --- | --- |
+| `index.html` | Markup and click handlers |
+| `style.css` | Layout and button styles |
 
-No server setup is required. Simply open `index.html` in any modern web browser to run the application.
+## Author
 
-## License
-
-This project is open-source and available under the MIT License.
+[Youssef Adel](https://github.com/darksnake288-pixel) · Frontend developer
